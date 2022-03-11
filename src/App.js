@@ -18,7 +18,7 @@ function App() {
     setDis(false);
   }
 
-  const reseteWatch = ()=>{
+  const resetWatch = ()=>{
     setTime(0);
     clearInterval(adjustInterval);
     setDis(false);
@@ -30,7 +30,7 @@ function App() {
       <h1>{time}</h1>
       <button className='start' disabled = {dis} onClick={startWatch}>Start</button>
       <button className='stop' onClick={stopWatch}>Stop</button>
-      <button className='reset' onClick={reseteWatch}>Reset</button>
+      <button className='reset' onClick={resetWatch}>Reset</button>
     </div>
   );
 }
